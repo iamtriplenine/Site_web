@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChillShop – Vibez & Lifestyle</title>
+  <meta name="description" content="Boutique lifestyle chill : nouveautés, best-sellers, promos et conseils." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="nav">
+    <div class="container nav__wrap">
+      <a class="logo" href="#">ChillShop</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#nouveautes">Nouveautés</a>
+        <a href="#collection">Collection</a>
+        <a href="#avis">Avis</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn--sm">Contact</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__wrap">
+      <div class="hero__text">
+        <h1>La vibe <span class="accent">chill</span> au quotidien</h1>
+        <p>Des essentiels confort & style, pensés pour t’accompagner partout.</p>
+        <div class="hero__cta">
+          <a href="#collection" class="btn">Découvrir la collection</a>
+          <a href="#nouveautes" class="btn btn--ghost">Voir les nouveautés</a>
+        </div>
+        <div class="hero__badges">
+          <span>✅ Retours 30j</span>
+          <span>🚚 Livraison rapide</span>
+          <span>💬 Support 7j/7</span>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop" alt="Look chill lifestyle" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Nouveautés / Cards -->
+  <section class="section" id="nouveautes">
+    <div class="container">
+      <div class="section__head">
+        <h2>Nouveautés</h2>
+        <a href="#collection" class="link">Tout voir →</a>
+      </div>
+
+      <div class="grid grid--cards">
+        <!-- Produit 1 -->
+        <article class="card">
+          <div class="card__media">
+            <img src="https://images.unsplash.com/photo-1503342394129-539f98bcd72e?q=80&w=1200&auto=format&fit=crop" alt="Hoodie Oversize" loading="lazy">
+            <span class="tag">Nouveau</span>
+          </div>
+          <div class="card__body">
+            <h3>Hoodie Oversize</h3>
+            <p>Coupe unisexe, coton bio 480 g.</p>
+            <div class="price"><span class="price__now">€59</span> <span class="price__old">€79</span></div>
+            <button class="btn btn--block" data-add="Hoodie Oversize">Ajouter au panier</button>
+          </div>
+        </article>
+
+        <!-- Produit 2 -->
+        <article class="card">
+          <div class="card__media">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop" alt="Jogger Essential" loading="lazy">
+            <span class="tag tag--accent">Top</span>
+          </div>
+          <div class="card__body">
+            <h3>Jogger Essential</h3>
+            <p>Tissu molleton premium, cordon réglable.</p>
+            <div class="price"><span class="price__now">€49</span></div>
+            <button class="btn btn--block" data-add="Jogger Essential">Ajouter au panier</button>
+          </div>
+        </article>
+
+        <!-- Produit 3 -->
+        <article class="card">
+          <div class="card__media">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop" alt="T-shirt Chill" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3>T-shirt Chill</h3>
+            <p>Coton peigné, coupe boxy.</p>
+            <div class="price"><span class="price__now">€25</span></div>
+            <button class="btn btn--block" data-add="T-shirt Chill">Ajouter au panier</button>
+          </div>
+        </article>
+
+        <!-- Produit 4 -->
+        <article class="card">
+          <div class="card__media">
+            <img src="https://images.unsplash.com/photo-1520975922215-230f0d2f49d2?q=80&w=1200&auto=format&fit=crop" alt="Casquette Minimal" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3>Casquette Minimal</h3>
+            <p>Logo brodé, taille ajustable.</p>
+            <div class="price"><span class="price__now">€19</span></div>
+            <button class="btn btn--block" data-add="Casquette Minimal">Ajouter au panier</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collection (grille) -->
+  <section class="section" id="collection">
+    <div class="container">
+      <h2>Collection</h2>
+      <div class="grid grid--masonry">
+        <img src="https://images.unsplash.com/photo-1520975922215-230f0d2f49d2?q=80&w=1200&auto=format&fit=crop" alt="">
+        <img src="https://images.unsplash.com/photo-1503342394129-539f98bcd72e?q=80&w=1200&auto=format&fit=crop" alt="">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop" alt="">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Avis / Testimonials -->
+  <section class="section section--alt" id="avis">
+    <div class="container">
+      <h2>Ils kiffent 💬</h2>
+      <div class="grid grid--testi">
+        <figure class="testi">
+          <blockquote>Qualité au top, coupe parfaite. Je commande encore !</blockquote>
+          <figcaption>— Inès</figcaption>
+        </figure>
+        <figure class="testi">
+          <blockquote>Livraison rapide et service client réactif, rien à dire.</blockquote>
+          <figcaption>— Marc</figcaption>
+        </figure>
+        <figure class="testi">
+          <blockquote>Les matières sont vraiment premium. Je recommande.</blockquote>
+          <figcaption>— Amin</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <details class="faq">
+        <summary>Quels sont les délais de livraison ?</summary>
+        <p>Entre 2 et 5 jours ouvrés selon la destination. Un suivi est envoyé par e-mail.</p>
+      </details>
+      <details class="faq">
+        <summary>Quelles sont vos politiques de retour ?</summary>
+        <p>Retours sous 30 jours, article non porté et étiquette intacte.</p>
+      </details>
+      <details class="faq">
+        <summary>Comment contacter le support ?</summary>
+        <p>Par e-mail ou WhatsApp 7j/7 via la section Contact.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Newsletter / Contact -->
+  <section class="section section--cta" id="contact">
+    <div class="container cta__wrap">
+      <h2>Reste dans la vibe ✉️</h2>
+      <form class="form" onsubmit="event.preventDefault(); subscribe();">
+        <input type="email" placeholder="ton@email.com" required />
+        <button class="btn" type="submit">S’inscrire</button>
+      </form>
+      <p class="note">En t’inscrivant, tu acceptes notre politique de confidentialité.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__wrap">
+      <p>© <span id="year"></span> ChillShop — Tous droits réservés.</p>
+      <div class="footer__links">
+        <a href="#">CGV</a>
+        <a href="#">Confidentialité</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
